@@ -1,0 +1,20 @@
+from popper-23.05.0
+
+diff -r ./utils/HtmlOutputDev.cc ../poppler-23.05.0/utils/HtmlOutputDev.cc
+50d49
+< // Copyright (C) 2023 HonokaNo <honokano07@gmail.com>
+1079,1082c1078
+< //    fprintf(stdout, "fileName:%s title:%s", fileName, title);
+< //    docTitle = new GooString(title);
+<     docTitle = new GooString(fileName);
+<     docTitle->append(".pdf");
+---
+>     docTitle = new GooString(title);
+diff -r ./utils/pdftohtml.cc ../poppler-23.05.0/utils/pdftohtml.cc
+33d32
+< // Copyright (C) 2023 HonokaNo <honokano07@gmail.com>
+235,236c234
+<         if (!errQuiet)
+<           fprintf(stderr, "Document has copy-protection bit set.\n");
+---
+>         fprintf(stderr, "Document has copy-protection bit set.\n");
