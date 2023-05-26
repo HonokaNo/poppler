@@ -1,6 +1,9 @@
 Poppler, a PDF rendering library
 ================================
 
+### This is forked from poppler 23.05.0!
+If you have any questions about the changes, please contact us <honokano07@gmail.com>.
+
 This is Poppler, a library for rendering PDF files, and examining or
 modifying their structure.  Poppler originally came from the XPDF
 sources; please see the file [README-XPDF](README-XPDF) for the
